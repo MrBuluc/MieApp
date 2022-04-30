@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sign_button/constants.dart';
 import 'package:sign_button/create_button.dart';
 
@@ -24,9 +25,9 @@ class _HomePageState extends State<HomePage> {
           Container(
             width: size.width,
             height: size.height * 0.5,
-            decoration: const BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.only(
+            decoration: BoxDecoration(
+              color: Colors.purple.shade200,
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(30),
                 topRight: Radius.circular(30),
               ),
@@ -34,14 +35,11 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 30),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30),
                   child: Text(
                     'Mie App',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 40,
-                    ),
+                    style: GoogleFonts.lobster(fontSize: 40),
                   ),
                 ),
                 Column(
@@ -49,13 +47,6 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     buildSignInButton(buttonType: ButtonType.google),
                     buildSignInButton(buttonType: ButtonType.apple),
-                    const Text(
-                      'Email',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 30,
-                      ),
-                    ),
                   ],
                 )
               ],
