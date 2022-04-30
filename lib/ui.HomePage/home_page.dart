@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sign_button/constants.dart';
 import 'package:sign_button/create_button.dart';
 
@@ -29,22 +28,16 @@ class _HomePageState extends State<HomePage> {
             width: size.width,
             height: size.height * 0.5,
             decoration: BoxDecoration(
-              color: Colors.purple.shade200,
+              color: Colors.blue.shade100,
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(30),
-                topRight: Radius.circular(30),
+                topLeft: const Radius.circular(30),
+                topRight: const Radius.circular(30),
               ),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 30),
-                  child: Text(
-                    'Mie App',
-                    style: GoogleFonts.lobster(fontSize: 40),
-                  ),
-                ),
+                Image.asset("assets/MiE logo.png"),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
