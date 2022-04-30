@@ -21,6 +21,9 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             width: size.width,
             height: size.height * 0.5,
+            child: Image.asset(
+              "assets/MiE ayna.png",
+            ),
           ),
           Container(
             width: size.width,
